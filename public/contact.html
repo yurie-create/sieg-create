@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>お問い合わせ | SIEG CREATE</title>
+
+  <meta name="description" content="ホームページ制作、LP制作、予約システム、集客導線改善についてお気軽にご相談ください。">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <a href="index.html" class="logo">
+    <span>SIEG CREATE</span>
+  </a>
+
+  <a href="index.html" class="header-btn">
+    TOPへ戻る
+  </a>
+
+</header>
+
+<main>
+
+  <section class="contact-page">
+
+    <p class="section-label">
+      CONTACT
+    </p>
+
+    <h1>
+      お問い合わせ
+    </h1>
+
+    <p class="contact-lead">
+      制作内容がまだ決まっていない段階でも大丈夫です。<br>
+      現状のお悩みや課題をお聞きしながら、
+      最適なご提案をいたします。
+    </p>
+
+    <div class="contact-card-page">
+
+      <form
+        class="contact-form"
+        action="/contact"
+        method="POST"
+      >
+
+        <div class="form-group">
+          <label for="name">
+            お名前
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">
+            メールアドレス
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="company">
+            会社名・団体名
+          </label>
+
+          <input
+            type="text"
+            id="company"
+            name="company"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="service">
+            ご相談内容
+          </label>
+
+          <select
+            id="service"
+            name="service"
+          >
+            <option>ホームページ制作</option>
+            <option>LP制作</option>
+            <option>予約システム</option>
+            <option>SEO対策</option>
+            <option>SNS運用</option>
+            <option>運営改善相談</option>
+            <option>その他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">
+            詳細内容
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            required
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="submit-btn"
+        >
+          送信する
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</main>
+
+</body>
+</html>
