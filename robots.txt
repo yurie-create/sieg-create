@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://create.sieg-sports.com/sitemap.xml
