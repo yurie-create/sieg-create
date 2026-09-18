@@ -26,21 +26,21 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="images/favicon.ico">
 </head>
-<body>
+<body class="sieg-home">
 
   <header class="site-header">
     <a href="/" class="logo">
       <span>SIEG CREATE</span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" id="main-nav" aria-label="メインナビゲーション">
       <a href="#service">Service</a>
       <a href="#works">Works</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <button class="menu-toggle" type="button">
+    <button class="menu-toggle" type="button" aria-label="メニューを開閉" aria-controls="main-nav" aria-expanded="false">
       <span></span>
       <span></span>
     </button>
@@ -50,33 +50,25 @@
 
   <main>
     <section class="hero">
-      <div class="hero-bg-text">DESIGN / SYSTEM / MARKETING</div>
-
       <div class="hero-content">
-        <p class="hero-label">WEB CREATIVE PARTNER</p>
-
-        <h1>
-          事業を伸ばすWeb導線を、<br>
-          現場目線で。
-        </h1>
-
-        <p class="hero-text">
-          スポーツスクール運営の実体験を活かし、<br>
-          スポーツスクール・整骨院・パーソナルジム・教育事業向けに、<br>
-          ホームページ制作、LP制作、予約システム、集客導線まで<br>
-          一貫して支援します。
-        </p>
-
-      
+        <p class="hero-brand">SIEG CREATE</p>
+        <h1><span>事業を伸ばす</span><span>Web導線を、</span><span>現場目線で。</span></h1>
+        <p class="hero-intro">つくって終わりではなく、<br>事業の成長まで伴走するWebパートナーです。</p>
       </div>
-
-      <!-- <div class="hero-visual">
-        <div class="circle circle-large"></div>
-        <div class="circle circle-small"></div>
-      </div> -->  
-      <div class="scroll-indicator">
-        <span>SCROLL</span>
-        <div class="scroll-line"></div>
+      <div class="hero-business">
+        <p class="hero-business-type" lang="en"><span>WEB</span><span>SYSTEM</span><span>MARKETING</span></p>
+        <div class="hero-business-note">
+          <p>SIEG CREATE</p>
+          <p lang="en">WEB DESIGN<br>SYSTEM DEVELOPMENT<br>MARKETING</p>
+        </div>
+      </div>
+      <div class="hero-disciplines">
+        <div class="hero-marquee" id="hero-marquee" lang="en">
+          <div class="hero-marquee-track">
+            <span class="hero-marquee-group">WEB DESIGN / SYSTEM DEVELOPMENT / MARKETING</span>
+            <span class="hero-marquee-group" aria-hidden="true">WEB DESIGN / SYSTEM DEVELOPMENT / MARKETING</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -96,7 +88,6 @@
             <div class="service-inner">
       
               <div class="service-text-box">
-                <p class="service-number">01</p>
       
                 <h2>
                   Web<br>
@@ -127,7 +118,6 @@
             <div class="service-inner">
       
               <div class="service-text-box">
-                <p class="service-number">02</p>
       
                 <h2>
                   Reserve<br>
@@ -158,7 +148,6 @@
             <div class="service-inner">
       
               <div class="service-text-box">
-                <p class="service-number">03</p>
       
                 <h2>
                   SEO<br>
@@ -190,7 +179,6 @@
             <div class="service-inner">
       
               <div class="service-text-box">
-                <p class="service-number">04</p>
       
                 <h2>
                     SNS/<br>
@@ -222,7 +210,6 @@
             <div class="service-inner">
       
               <div class="service-text-box">
-                <p class="service-number">05</p>
       
                 <h2>
                   Growth<br>
@@ -241,7 +228,7 @@
               </div>
       
               <div class="service-visual-box">
-                <img src="/images/service-growth.jpg" alt="コンテンツ発信支援">
+                <img src="/images/service-growth.jpg" alt="運営改善サポート">
               </div>
       
             </div>
@@ -270,7 +257,7 @@
           </p>
         </div>
       
-        <div class="works-slider">
+        <div class="works-list">
       
           <!-- 01 -->
           <a href="works-siegsports.html" class="work-card">
@@ -336,11 +323,11 @@
       
             <div class="work-image work-image03">
                 <img src="images/work-04.png" alt="Landing Page">
-              <span class="work-tag">LP DESIGN</span>
+              <span class="work-tag">提案用サンプル</span>
             </div>
       
             <div class="work-info">
-              <p class="work-category">LANDING PAGE</p>
+              <p class="work-category">LP DESIGN / 提案用サンプル（実案件ではありません）</p>
       
       
               <p>
@@ -363,7 +350,7 @@
           <small>私たちについて</small>
         </div>
         <div class="about-main">      
-      <section class="about-section" id="about">
+      <section class="about-section">
 
         <div class="about-grid">
       
@@ -409,7 +396,6 @@
         <div class="about-bottom">
       
             <div class="about-item">
-                <span>01</span>
               
                 <h3>現場から生まれた</h3>
               
@@ -424,7 +410,6 @@
               </div>
               
               <div class="about-item">
-                <span>02</span>
               
                 <h3>一緒に成長する</h3>
               
@@ -439,7 +424,6 @@
               </div>
               
               <div class="about-item">
-                <span>03</span>
               
                 <h3>成長し続ける</h3>
               
@@ -523,13 +507,59 @@
 const nav = document.querySelector('.nav');
 
 menuBtn.addEventListener('click', () => {
-  nav.classList.toggle('open');
+  const open = nav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', String(open));
 });
 
 document.querySelectorAll('.nav a').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
   });
 });
+  // Observe once; without JS or with reduced motion, all content stays visible.
+  (() => {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) return;
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove('sieg-reveal-pending');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' });
+
+    const register = (selector, delay = 0, quiet = false) => {
+      document.querySelectorAll(selector).forEach((element, index) => {
+        if (!element.getClientRects().length) return;
+        element.style.setProperty('--reveal-delay', `${(index % 2) * delay}s`);
+        if (quiet) element.classList.add('sieg-reveal-quiet');
+        element.classList.add('sieg-reveal', 'sieg-reveal-pending');
+        observer.observe(element);
+      });
+    };
+    register('.service-inner > .service-text-box, .service-inner > .service-visual-box', 0.12);
+    register('.works-head');
+    register('.works-list > .work-card', 0.14);
+    register('.about-content h2, .about-text, .about-image, .about-item', 0.08, true);
+    register('.contact-side, .contact-main > h2, .contact-card', 0.1, true);
+
+    // Keyboard navigation and a live preference change must never hide content.
+    document.addEventListener('focusin', event => {
+      const element = event.target.closest('.sieg-reveal-pending');
+      if (element) {
+        element.classList.remove('sieg-reveal-pending');
+        observer.unobserve(element);
+      }
+    });
+    reducedMotion.addEventListener('change', event => {
+      if (!event.matches) return;
+      observer.disconnect();
+      document.querySelectorAll('.sieg-reveal-pending').forEach(element => {
+        element.classList.remove('sieg-reveal-pending');
+      });
+    });
+  })();
   </script>
 </html>

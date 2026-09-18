@@ -19,21 +19,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="sieg-case">
 
 <header class="site-header">
   <a href="index.html" class="logo">
     <span>SIEG CREATE</span>
   </a>
 
-  <nav class="nav">
+  <nav class="nav" id="case-nav" aria-label="メインナビゲーション">
     <a href="/#service">Service</a>
     <a href="/#works">Works</a>
     <a href="/#about">About</a>
     <a href="/#contact">Contact</a>
   </nav>
 
-  <button class="menu-toggle" type="button">
+  <button class="menu-toggle" type="button" aria-label="メニューを開閉" aria-controls="case-nav" aria-expanded="false">
     <span></span>
     <span></span>
   </button>
@@ -41,175 +41,175 @@
   <a href="contact.html" class="header-btn">無料相談</a>
 </header>
 
-<main>
+<main class="case-main" id="case-main">
+  <section class="case-hero case-container" aria-labelledby="project-title">
+    <a class="case-back" href="index.html#works">← 制作実績一覧</a>
+    <div class="case-hero-heading" data-case-reveal>
+      <h1 id="project-title">SIEG SPORTS<span>Sprint School</span>
+</h1>
+      <div class="case-hero-meta">
+<p>Web Design</p>
+<p>情報設計・デザイン・実装</p>
+</div>
+    </div>
+    <p class="case-lead" data-case-reveal>スクールの魅力と成長を伝える<br>
+      スプリントスクール公式Webサイト</p>
 
-  <section class="work-detail-hero">
-    <p class="section-label">WORKS / WEB SITE</p>
-
-    <h1>
-      WEB
-      SITE
-    </h1>
-
-    <p class="work-detail-lead">
-      スクールの魅力と成長を伝える<br>
-      スプリントスクール公式Webサイト
-    </p>
-    
-    <p class="work-detail-text">
-      小中学生向けスプリントスクールの公式Webサイトを制作しました。<br>
+  </section>
+  <figure class="case-main-visual case-container" data-case-reveal>
+    <img src="images/work-03.png" width="1920" height="1080" alt="SIEG SPORTS Sprint School Webサイト" fetchpriority="high" decoding="async">
+    <figcaption>PC・スマートフォン表示</figcaption>
+  </figure>
+  <section class="case-section case-container" id="overview" aria-labelledby="overview-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">OVERVIEW</p>
+<h2 id="overview-title">プロジェクト概要</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<dl class="case-facts">
+<div>
+<dt>PROJECT</dt>
+<dd>SIEG SPORTSスプリントスクール（自社運営）</dd>
+</div>
+<div>
+<dt>CATEGORY</dt>
+<dd>Web Design</dd>
+</div>
+<div>
+<dt>ROLE</dt>
+<dd>情報設計・デザイン・実装</dd>
+</div>
+</dl>
+<div class="case-prose">
+<p>小中学生向けスプリントスクールの公式Webサイトを制作しました。<br>
       スクールの特徴、指導方針、成長実績、保護者の声、よくある質問をまとめ、
-      初めて訪れた保護者の方が安心して無料体験へ申し込めるサイトを目指しました。
-    </p>
-    <div class="work-detail-image">
-      <img src="images/work-03.png" alt="SIEG SPORTS Sprint School Webサイト">
-    </div>
-  </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">PROJECT</p>
-
-    <h2>プロジェクト概要</h2>
-
-    <p class="work-detail-text">
-      SIEG SPORTSスプリントスクールは、小中学生を対象としたスプリントスクールです。<br><br>
+      初めて訪れた保護者の方が安心して無料体験へ申し込めるサイトを目指しました。</p>
+<p>SIEG SPORTSスプリントスクールは、小中学生を対象としたスプリントスクールです。<br>
+<br>
       速く走るための技術を身につけるだけでなく、
-      目標を決め、努力し、成長を実感する楽しさを伝えることを大切にしています。<br><br>
+      目標を決め、努力し、成長を実感する楽しさを伝えることを大切にしています。<br>
+<br>
       スクールの特徴や指導方針、実際のタイム向上、保護者の声、教室情報を整理し、
-      スクールの魅力と安心感が伝わる構成にしています。
-    </p>
+      スクールの魅力と安心感が伝わる構成にしています。</p>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">CHALLENGE</p>
-
-    <h2>課題</h2>
-
-    <div class="problem-grid">
-      <div class="problem-card">スクール独自の特徴が十分に伝わっていない</div>
-      <div class="problem-card">子どもがどのように成長できるのか分かりにくい</div>
-      <div class="problem-card">保護者が安心して検討できる情報が不足している</div>
-      <div class="problem-card">教室内容を探しにくい</div>
-      <div class="problem-card">無料体験までの導線が分かりにくい</div>
-    </div>
+  <section class="case-section case-container" id="challenge" aria-labelledby="challenge-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">CHALLENGE</p>
+<h2 id="challenge-title">課題</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<ul class="case-list">
+<li>スクール独自の特徴が十分に伝わっていない</li>
+<li>子どもがどのように成長できるのか分かりにくい</li>
+<li>保護者が安心して検討できる情報が不足している</li>
+<li>教室内容を探しにくい</li>
+<li>無料体験までの導線が分かりにくい</li>
+</ul>
+</div>
   </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">SOLUTION</p>
-
-    <h2>実装内容</h2>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <span>01</span>
-        <h3>ファーストビュー</h3>
-        <p>子どもたちが走る写真を大きく使い、スクールの明るさや躍動感が伝わるトップ画面を設計。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>02</span>
-        <h3>スクール紹介</h3>
-        <p>スクールの考え方や指導方針、対象となる子どもについて分かりやすく整理。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>03</span>
-        <h3>3つの特徴</h3>
-        <p>SIEG SPORTS監修、成長記録システム、毎月の50m測定という独自の強みを掲載。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>04</span>
-        <h3>成長実績</h3>
-        <p>実際の50mタイムの変化を数字で掲載し、子どもたちの成長を具体的に可視化。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>05</span>
-        <h3>保護者の声</h3>
-        <p>実際に通う子どもの保護者から寄せられた声を掲載し、検討時の安心感につながる構成に。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>06</span>
-        <h3>無料体験導線</h3>
-        <p>各セクションから無料体験へ進める導線を設け、迷わず申し込みできる流れを整備。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">DESIGN</p>
-
-    <h2>デザインコンセプト</h2>
-
-    <p class="work-detail-text">
-        「信頼感」「上質さ」「成長」をテーマに設計しました。<br><br>
-        写真を大きく見せるレイアウトと余白を活かし、スポーツスクールらしい躍動感を残しながらも、
-        落ち着きと高級感のあるデザインに仕上げています。
-        
-    </p>
-  </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">POINT</p>
-
-    <h2>制作ポイント</h2>
-
-    <p class="work-detail-text">
-      スクールの雰囲気だけではなく、実際の成長が伝わることを重視しました。<br><br>
-      指導方針、スクールの特徴、50mのタイム向上、保護者の声、よくある質問までを一つのサイトに集約し、
-      初めて訪れた方がスクールについて順番に理解できる導線を設計しています。<br><br>
-      また、保護者の方がスマートフォンから閲覧することを前提に、
-      見やすさと無料体験への申し込みやすさにも配慮しました。
-    </p>
-  </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">RESULT</p>
-
-    <h2>得られた効果</h2>
-
-    <div class="problem-grid">
-      <div class="problem-card">スクール独自の特徴を明確化</div>
-      <div class="problem-card">子どもたちの成長を数字で可視化</div>
-      <div class="problem-card">保護者の声による安心感の向上</div>
-      <div class="problem-card">教室内容を整理</div>
-      <div class="problem-card">無料体験への申し込み導線を整備</div>
-    </div>
-  </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">MESSAGE</p>
-
-    <h2>
-      スクール運営を知っているからこそ<br>
-      作れるWebサイト
-    </h2>
-
-    <p class="work-detail-text">
-      SIEG SPORTSスプリントスクールは私自身が運営しているスクールです。<br><br>
+  <section class="case-section case-container" id="approach" aria-labelledby="approach-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">APPROACH</p>
+<h2 id="approach-title">考え方・制作の背景</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<div class="case-prose">
+<div class="case-prose-part">
+<h3>スクール運営を知っているからこそ<br>
+      作れるWebサイト</h3>
+<p>SIEG SPORTSスプリントスクールは私自身が運営しているスクールです。<br>
+<br>
       実際に保護者の方から寄せられる質問や、体験申し込み前に感じる不安を把握しているからこそ、
-      必要な情報と導線を現場目線で設計しています。
-    </p>
+      必要な情報と導線を現場目線で設計しています。</p>
+</div>
+<div class="case-prose-part">
+<h3>デザインコンセプト</h3>
+<p>「信頼感」「上質さ」「成長」をテーマに設計しました。<br>
+<br>
+        写真を大きく見せるレイアウトと余白を活かし、スポーツスクールらしい躍動感を残しながらも、
+        落ち着きと高級感のあるデザインに仕上げています。</p>
+</div>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-cta">
-    <h2>
-      スクール運営の経験を活かし、<br>
-      現場目線でWebサイトを制作します。
-    </h2>
-
-    <p>
-      スポーツスクール・クラブ・教室運営者様向けの<br>
-      Webサイト制作も対応しています。
-    </p>
-
-    <a href="contact.html" class="contact-btn">
-      お問い合わせはこちら
-    </a>
+  <section class="case-section case-container" id="development" aria-labelledby="development-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">DEVELOPMENT / DESIGN</p>
+<h2 id="development-title">制作内容・設計</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<dl class="case-features">
+<div>
+<dt>ファーストビュー</dt>
+<dd>子どもたちが走る写真を大きく使い、スクールの明るさや躍動感が伝わるトップ画面を設計。</dd>
+</div>
+<div>
+<dt>スクール紹介</dt>
+<dd>スクールの考え方や指導方針、対象となる子どもについて分かりやすく整理。</dd>
+</div>
+<div>
+<dt>3つの特徴</dt>
+<dd>SIEG SPORTS監修、成長記録システム、毎月の50m測定という独自の強みを掲載。</dd>
+</div>
+<div>
+<dt>成長実績</dt>
+<dd>実際の50mタイムの変化を数字で掲載し、子どもたちの成長を具体的に可視化。</dd>
+</div>
+<div>
+<dt>保護者の声</dt>
+<dd>実際に通う子どもの保護者から寄せられた声を掲載し、検討時の安心感につながる構成に。</dd>
+</div>
+<div>
+<dt>無料体験導線</dt>
+<dd>各セクションから無料体験へ進める導線を設け、迷わず申し込みできる流れを整備。</dd>
+</div>
+</dl>
+<div class="case-prose-part">
+<h3>制作ポイント</h3>
+<p>スクールの雰囲気だけではなく、実際の成長が伝わることを重視しました。<br>
+<br>
+      指導方針、スクールの特徴、50mのタイム向上、保護者の声、よくある質問までを一つのサイトに集約し、
+      初めて訪れた方がスクールについて順番に理解できる導線を設計しています。<br>
+<br>
+      また、保護者の方がスマートフォンから閲覧することを前提に、
+      見やすさと無料体験への申し込みやすさにも配慮しました。</p>
+</div>
+</div>
   </section>
-
+  <section class="case-section case-container" id="result" aria-labelledby="result-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">RESULT</p>
+<h2 id="result-title">得られた効果</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<ul class="case-list">
+<li>スクール独自の特徴を明確化</li>
+<li>子どもたちの成長を数字で可視化</li>
+<li>保護者の声による安心感の向上</li>
+<li>教室内容を整理</li>
+<li>無料体験への申し込み導線を整備</li>
+</ul>
+</div>
+  </section>
+  <section class="case-contact case-container" aria-labelledby="case-contact-title">
+    <div data-case-reveal>
+<h2 id="case-contact-title">スクール運営の経験を活かし、<br>
+      現場目線でWebサイトを制作します。</h2>
+<p>スポーツスクール・クラブ・教室運営者様向けの<br>
+      Webサイト制作も対応しています。</p>
+</div>
+    <a href="contact.html" class="contact-btn">お問い合わせはこちら</a>
+  </section>
+  <nav class="case-next case-container" aria-label="次の制作実績">
+    <a href="works-reservation.html">
+<span class="case-label">NEXT PROJECT</span>
+<span class="case-next-title">予約・振替・会員管理システム</span>
+<span class="case-next-arrow" aria-hidden="true">→</span>
+</a>
+    <a class="case-all" href="index.html#works">制作実績一覧へ戻る</a>
+  </nav>
 </main>
 
 <footer class="site-footer">
@@ -238,20 +238,52 @@
   
 </footer>
 
-</body>
-
 <script>
-  const menuBtn = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-
-menuBtn.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
-
-document.querySelectorAll('.nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-  });
-});
-  </script>
+  (() => {
+    const button = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    const closeMenu = () => {
+      nav.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+    };
+    button.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        closeMenu();
+        button.focus();
+      }
+    });
+    window.matchMedia('(max-width: 768px)').addEventListener('change', closeMenu);
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reduced.matches || !('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove('case-pending');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.04, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('[data-case-reveal]').forEach(element => {
+      element.classList.add('case-pending');
+      observer.observe(element);
+    });
+    document.addEventListener('focusin', event => {
+      const target = event.target.closest('.case-pending');
+      if (target) {
+        target.classList.remove('case-pending');
+        observer.unobserve(target);
+      }
+    });
+    reduced.addEventListener('change', event => {
+      if (!event.matches) return;
+      observer.disconnect();
+      document.querySelectorAll('.case-pending').forEach(element => element.classList.remove('case-pending'));
+    });
+  })();
+</script>
+</body>
 </html>

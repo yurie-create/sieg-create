@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="sieg-case">
 
 <header class="site-header">
   <a href="index.html" class="logo">
@@ -27,14 +27,14 @@
   </a>
 
 
-  <nav class="nav">
+  <nav class="nav" id="case-nav" aria-label="メインナビゲーション">
     <a href="/#service">Service</a>
     <a href="/#works">Works</a>
     <a href="/#about">About</a>
     <a href="/#contact">Contact</a>
   </nav>
 
-  <button class="menu-toggle" type="button">
+  <button class="menu-toggle" type="button" aria-label="メニューを開閉" aria-controls="case-nav" aria-expanded="false">
     <span></span>
     <span></span>
   </button>
@@ -43,139 +43,159 @@
   <a href="contact.html" class="header-btn">無料相談</a>
 </header>
 
-<main>
+<main class="case-main" id="case-main">
+  <section class="case-hero case-container" aria-labelledby="project-title">
+    <a class="case-back" href="index.html#works">← 制作実績一覧</a>
+    <div class="case-hero-heading" data-case-reveal>
+      <h1 id="project-title">予約・振替・<span>会員管理システム</span>
+</h1>
+      <div class="case-hero-meta">
+<p>System Development</p>
+<p>設計・システム開発</p>
+</div>
+    </div>
+    <p class="case-lead" data-case-reveal>実際のスクール運営から生まれた<br>
+      予約・振替・会員管理システム</p>
 
-  <section class="work-detail-hero">
-    <p class="section-label">WORKS / SYSTEM</p>
-
-    <h1>
-      Reservation<br>
-      System
-    </h1>
-
-    <p class="work-detail-lead">
-      実際のスクール運営から生まれた<br>
-      予約・振替・会員管理システム
-    </p>
-
-    <p class="work-detail-text">
-      予約受付、欠席管理、振替管理、会員管理を一元化。<br>
+  </section>
+  <figure class="case-main-visual case-container" data-case-reveal>
+    <img src="images/work-02.png" width="1955" height="1093" alt="予約システム画面" fetchpriority="high" decoding="async">
+    <figcaption>会員ページ・予約・欠席／振替管理</figcaption>
+  </figure>
+  <section class="case-section case-container" id="overview" aria-labelledby="overview-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">OVERVIEW</p>
+<h2 id="overview-title">プロジェクト概要</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<dl class="case-facts">
+<div>
+<dt>PROJECT</dt>
+<dd>スクール運営向け予約管理システム</dd>
+</div>
+<div>
+<dt>CATEGORY</dt>
+<dd>System Development</dd>
+</div>
+<div>
+<dt>ROLE</dt>
+<dd>設計・システム開発</dd>
+</div>
+</dl>
+<div class="case-prose">
+<p>予約受付、欠席管理、振替管理、会員管理を一元化。<br>
       スポーツスクール運営で実際に感じた課題をもとに開発した、
-      現場目線の予約管理システムです。
-    </p>
-
-    <div class="work-detail-image">
-      <img src="images/work-02.png" alt="予約システム画面">
-    </div>
+      現場目線の予約管理システムです。</p>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">PROBLEM</p>
-
-    <h2>運営でこんなお悩みはありませんか？</h2>
-
-    <div class="problem-grid">
-      <div class="problem-card">予約受付がLINEで管理しきれない</div>
-      <div class="problem-card">欠席連絡が個別で届く</div>
-      <div class="problem-card">振替管理に時間がかかる</div>
-      <div class="problem-card">会員情報が散らばっている</div>
-      <div class="problem-card">保護者対応に追われる</div>
-      <div class="problem-card">運営作業で本来の指導時間が減る</div>
-    </div>
+  <section class="case-section case-container" id="challenge" aria-labelledby="challenge-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">CHALLENGE</p>
+<h2 id="challenge-title">運営でこんなお悩みはありませんか？</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<ul class="case-list">
+<li>予約受付がLINEで管理しきれない</li>
+<li>欠席連絡が個別で届く</li>
+<li>振替管理に時間がかかる</li>
+<li>会員情報が散らばっている</li>
+<li>保護者対応に追われる</li>
+<li>運営作業で本来の指導時間が減る</li>
+</ul>
+</div>
   </section>
+  <section class="case-section case-container" id="approach" aria-labelledby="approach-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">APPROACH</p>
+<h2 id="approach-title">考え方・制作の背景</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<div class="case-prose">
+<div class="case-prose-part">
+<h3>なぜこのシステムを<br>
+      作ったのか</h3>
+<p>私自身がスポーツスクールを運営する中で、
+      予約管理や振替対応に多くの時間を費やしていました。<br>
+<br>
 
-  <section class="work-detail-section mint">
-    <p class="section-label">SOLUTION</p>
-
-    <h2>
-      必要な機能を、<br>
-      ひとつにまとめました。
-    </h2>
-
-    <p class="work-detail-text">
-      予約・欠席・振替・会員管理・記録管理を一元化することで、
-      管理業務を効率化します。<br>
-      管理者だけでなく、保護者や会員にとっても使いやすい導線を意識しています。
-    </p>
-  </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">FEATURE</p>
-
-    <h2>主な機能</h2>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <span>01</span>
-        <h3>予約管理</h3>
-        <p>空き状況を確認しながら、24時間いつでも予約可能。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>02</span>
-        <h3>欠席管理</h3>
-        <p>会員ページから簡単に欠席登録。連絡漏れを防ぎます。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>03</span>
-        <h3>振替管理</h3>
-        <p>振替回数を自動管理。管理者の負担を軽減します。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>04</span>
-        <h3>会員管理</h3>
-        <p>会員情報を一元管理し、必要な情報をすぐに確認できます。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>05</span>
-        <h3>練習日誌</h3>
-        <p>日々の取り組みを記録し、継続的な成長をサポートします。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>06</span>
-        <h3>記録管理</h3>
-        <p>過去の記録を可視化し、成長の変化を確認できます。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">WHY</p>
-
-    <h2>
-      なぜこのシステムを<br>
-      作ったのか
-    </h2>
-
-    <p class="work-detail-text">
-      私自身がスポーツスクールを運営する中で、
-      予約管理や振替対応に多くの時間を費やしていました。<br><br>
-
-      「もっと指導や運営の本質に集中したい」<br><br>
+      「もっと指導や運営の本質に集中したい」<br>
+<br>
 
       そんな想いから、実際の運営課題を解決するために
       このシステムを開発しました。<br>
-      現場で使うからこそ、本当に必要な機能と使いやすさを大切にしています。
-    </p>
+      現場で使うからこそ、本当に必要な機能と使いやすさを大切にしています。</p>
+</div>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-cta">
-    <h2>運営をもっとシンプルに。</h2>
-
-    <p>
-      スクール・教室運営に合わせた<br>
-      予約システムをご提案します。
-    </p>
-
-    <a href="contact.html" class="contact-btn">
-      お問い合わせはこちら
-    </a>
+  <section class="case-section case-container" id="development" aria-labelledby="development-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">DEVELOPMENT / DESIGN</p>
+<h2 id="development-title">制作内容・設計</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<div class="case-prose-part">
+<h3>必要な機能を、<br>
+      ひとつにまとめました。</h3>
+<p>予約・欠席・振替・会員管理・記録管理を一元化することで、
+      管理業務を効率化します。<br>
+      管理者だけでなく、保護者や会員にとっても使いやすい導線を意識しています。</p>
+</div>
+<dl class="case-features">
+<div>
+<dt>予約管理</dt>
+<dd>空き状況を確認しながら、24時間いつでも予約可能。</dd>
+</div>
+<div>
+<dt>欠席管理</dt>
+<dd>会員ページから簡単に欠席登録。連絡漏れを防ぎます。</dd>
+</div>
+<div>
+<dt>振替管理</dt>
+<dd>振替回数を自動管理。管理者の負担を軽減します。</dd>
+</div>
+<div>
+<dt>会員管理</dt>
+<dd>会員情報を一元管理し、必要な情報をすぐに確認できます。</dd>
+</div>
+<div>
+<dt>練習日誌</dt>
+<dd>日々の取り組みを記録し、継続的な成長をサポートします。</dd>
+</div>
+<div>
+<dt>記録管理</dt>
+<dd>過去の記録を可視化し、成長の変化を確認できます。</dd>
+</div>
+</dl>
+</div>
   </section>
-
+  <section class="case-related case-container" aria-labelledby="related-title">
+    <div class="case-related-heading" data-case-reveal>
+<p class="case-label">RELATED VISUALS</p>
+<h2 id="related-title">画面で見る制作内容</h2>
+</div>
+    <figure data-case-reveal>
+<img src="images/service-reserve.jpg" width="1672" height="941" alt="予約受付・欠席／振替管理の画面" loading="lazy" decoding="async">
+<figcaption>予約受付・欠席／振替管理の画面</figcaption>
+</figure>
+  </section>
+  <section class="case-contact case-container" aria-labelledby="case-contact-title">
+    <div data-case-reveal>
+<h2 id="case-contact-title">運営をもっとシンプルに。</h2>
+<p>スクール・教室運営に合わせた<br>
+      予約システムをご提案します。</p>
+</div>
+    <a href="contact.html" class="contact-btn">お問い合わせはこちら</a>
+  </section>
+  <nav class="case-next case-container" aria-label="次の制作実績">
+    <a href="works-lp.html">
+<span class="case-label">NEXT PROJECT</span>
+<span class="case-next-title">整骨院ランディングページ</span>
+<span class="case-next-arrow" aria-hidden="true">→</span>
+</a>
+    <a class="case-all" href="index.html#works">制作実績一覧へ戻る</a>
+  </nav>
 </main>
 
 <footer class="site-footer">
@@ -203,19 +223,52 @@
   
 </footer>
 
-</body>
 <script>
-    const menuBtn = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
-  
-  menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-  
-  document.querySelectorAll('.nav a').forEach(link => {
-    link.addEventListener('click', () => {
+  (() => {
+    const button = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    const closeMenu = () => {
       nav.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+    };
+    button.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
     });
-  });
-    </script>
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        closeMenu();
+        button.focus();
+      }
+    });
+    window.matchMedia('(max-width: 768px)').addEventListener('change', closeMenu);
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reduced.matches || !('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove('case-pending');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.04, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('[data-case-reveal]').forEach(element => {
+      element.classList.add('case-pending');
+      observer.observe(element);
+    });
+    document.addEventListener('focusin', event => {
+      const target = event.target.closest('.case-pending');
+      if (target) {
+        target.classList.remove('case-pending');
+        observer.unobserve(target);
+      }
+    });
+    reduced.addEventListener('change', event => {
+      if (!event.matches) return;
+      observer.disconnect();
+      document.querySelectorAll('.case-pending').forEach(element => element.classList.remove('case-pending'));
+    });
+  })();
+</script>
+</body>
 </html>

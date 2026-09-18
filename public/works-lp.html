@@ -19,21 +19,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="sieg-case">
 
 <header class="site-header">
   <a href="index.html" class="logo">
     <span>SIEG CREATE</span>
   </a>
 
-  <nav class="nav">
+  <nav class="nav" id="case-nav" aria-label="メインナビゲーション">
     <a href="/#service">Service</a>
     <a href="/#works">Works</a>
     <a href="/#about">About</a>
     <a href="/#contact">Contact</a>
   </nav>
 
-  <button class="menu-toggle" type="button">
+  <button class="menu-toggle" type="button" aria-label="メニューを開閉" aria-controls="case-nav" aria-expanded="false">
     <span></span>
     <span></span>
   </button>
@@ -42,154 +42,155 @@
   <a href="contact.html" class="header-btn">無料相談</a>
 </header>
 
-<main>
-
-  <section class="work-detail-hero">
-    <p class="section-label">WORKS / CONCEPT LP</p>
-
-    <h1>
-      Concept<br>
-      LP Design
-    </h1>
-
-    <p class="work-detail-lead">
-      整骨院向け<br>
-      ランディングページ提案
-    </p>
-
-    <p class="work-detail-text">
-      整骨院・整体院向けの集客を想定して制作した
+<main class="case-main" id="case-main">
+  <section class="case-hero case-container" aria-labelledby="project-title">
+    <a class="case-back" href="index.html#works">← 制作実績一覧</a>
+    <div class="case-hero-heading" data-case-reveal>
+      <h1 id="project-title">整骨院<span>ランディングページ</span>
+</h1>
+      <div class="case-hero-meta">
+<p>LP Design / Concept Work</p>
+<p>構成設計・デザイン提案</p>
+</div>
+    </div>
+    <p class="case-lead" data-case-reveal>整骨院向け<br>
+      ランディングページ提案</p>
+    <p class="case-sample">提案用デザインサンプル / 実案件ではありません</p>
+  </section>
+  <figure class="case-main-visual case-container" data-case-reveal>
+    <img src="images/work-04.png" width="1536" height="1024" alt="整骨院LPデザイン案" fetchpriority="high" decoding="async">
+    <figcaption>提案用デザインサンプル / PC・スマートフォン表示</figcaption>
+  </figure>
+  <section class="case-section case-container" id="overview" aria-labelledby="overview-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">OVERVIEW</p>
+<h2 id="overview-title">プロジェクト概要</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<dl class="case-facts">
+<div>
+<dt>PROJECT</dt>
+<dd>整骨院・整体院向けの提案用サンプル</dd>
+</div>
+<div>
+<dt>CATEGORY</dt>
+<dd>LP Design / Concept Work</dd>
+</div>
+<div>
+<dt>ROLE</dt>
+<dd>構成設計・デザイン提案</dd>
+</div>
+</dl>
+<div class="case-prose">
+<p>整骨院・整体院向けの集客を想定して制作した
       ランディングページデザイン案です。<br>
       初めて来院する方にも安心感が伝わるよう、
-      信頼性と予約導線を重視して設計しています。
-    </p>
-
-    <div class="work-detail-image">
-      <img src="images/work-04.png" alt="整骨院LPデザイン案">
-    </div>
+      信頼性と予約導線を重視して設計しています。</p>
+<p>※本ページは提案用デザインサンプルです。<br>
+      実案件ではなく、整骨院向けLP制作イメージとして制作しています。</p>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">PURPOSE</p>
-
-    <h2>想定した課題</h2>
-
-    <div class="problem-grid">
-      <div class="problem-card">ホームページはあるが問い合わせが少ない</div>
-      <div class="problem-card">サービスの強みが伝わらない</div>
-      <div class="problem-card">スマホから予約しづらい</div>
-      <div class="problem-card">広告やSNSの受け皿がない</div>
-      <div class="problem-card">競合との差別化ができていない</div>
-    </div>
+  <section class="case-section case-container" id="challenge" aria-labelledby="challenge-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">CHALLENGE</p>
+<h2 id="challenge-title">想定した課題</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<ul class="case-list">
+<li>ホームページはあるが問い合わせが少ない</li>
+<li>サービスの強みが伝わらない</li>
+<li>スマホから予約しづらい</li>
+<li>広告やSNSの受け皿がない</li>
+<li>競合との差別化ができていない</li>
+</ul>
+</div>
   </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">CONCEPT</p>
-
-    <h2>コンセプト</h2>
-
-    <p class="work-detail-text">
-      初めて来院する方の不安を減らし、
-      安心して予約できる導線を設計。<br><br>
+  <section class="case-section case-container" id="approach" aria-labelledby="approach-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">APPROACH</p>
+<h2 id="approach-title">考え方・制作の背景</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<div class="case-prose">
+<div class="case-prose-part">
+<h3>コンセプト</h3>
+<p>初めて来院する方の不安を減らし、
+      安心して予約できる導線を設計。<br>
+<br>
       実績・お客様の声・施術の流れを整理し、
-      問い合わせにつながる構成を意識しました。
-    </p>
-  </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">DESIGN</p>
-
-    <h2>デザインポイント</h2>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <span>01</span>
-        <h3>清潔感</h3>
-        <p>安心して相談できる印象を与える、落ち着いたデザイン。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>02</span>
-        <h3>信頼感</h3>
-        <p>実績やお客様の声を見やすく配置し、不安を軽減。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>03</span>
-        <h3>スマホ最適化</h3>
-        <p>スマートフォンからでも見やすく、予約しやすい構成。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>04</span>
-        <h3>予約導線強化</h3>
-        <p>問い合わせボタンや予約導線を分かりやすく配置。</p>
-      </div>
-
-      <div class="feature-card">
-        <span>05</span>
-        <h3>情報設計</h3>
-        <p>施術内容・料金・アクセスを整理し、迷わず確認できる構成。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">FLOW</p>
-
-    <h2>LP構成</h2>
-
-    <div class="problem-grid">
-      <div class="problem-card">ファーストビュー</div>
-      <div class="problem-card">選ばれる理由</div>
-      <div class="problem-card">施術内容</div>
-      <div class="problem-card">お客様の声</div>
-      <div class="problem-card">料金案内</div>
-      <div class="problem-card">アクセス</div>
-      <div class="problem-card">お問い合わせ</div>
-    </div>
-  </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">POINT</p>
-
-    <h2>提案ポイント</h2>
-
-    <p class="work-detail-text">
-      地域ビジネスでは、
-      「安心できそう」と感じてもらうことが重要です。<br><br>
+      問い合わせにつながる構成を意識しました。</p>
+</div>
+<div class="case-prose-part">
+<h3>提案ポイント</h3>
+<p>地域ビジネスでは、
+      「安心できそう」と感じてもらうことが重要です。<br>
+<br>
       見た目だけでなく、
-      予約や問い合わせにつながる導線設計を意識しています。
-    </p>
+      予約や問い合わせにつながる導線設計を意識しています。</p>
+</div>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">NOTICE</p>
-
-    <h2>Concept Work</h2>
-
-    <p class="work-detail-text">
-      ※本ページは提案用デザインサンプルです。<br>
-      実案件ではなく、整骨院向けLP制作イメージとして制作しています。
-    </p>
+  <section class="case-section case-container" id="development" aria-labelledby="development-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">DEVELOPMENT / DESIGN</p>
+<h2 id="development-title">制作内容・設計</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<dl class="case-features">
+<div>
+<dt>清潔感</dt>
+<dd>安心して相談できる印象を与える、落ち着いたデザイン。</dd>
+</div>
+<div>
+<dt>信頼感</dt>
+<dd>実績やお客様の声を見やすく配置し、不安を軽減。</dd>
+</div>
+<div>
+<dt>スマホ最適化</dt>
+<dd>スマートフォンからでも見やすく、予約しやすい構成。</dd>
+</div>
+<div>
+<dt>予約導線強化</dt>
+<dd>問い合わせボタンや予約導線を分かりやすく配置。</dd>
+</div>
+<div>
+<dt>情報設計</dt>
+<dd>施術内容・料金・アクセスを整理し、迷わず確認できる構成。</dd>
+</div>
+</dl>
+<div class="case-prose-part">
+<h3>LP構成</h3>
+<ul class="case-list">
+<li>ファーストビュー</li>
+<li>選ばれる理由</li>
+<li>施術内容</li>
+<li>お客様の声</li>
+<li>料金案内</li>
+<li>アクセス</li>
+<li>お問い合わせ</li>
+</ul>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-cta">
-    <h2>
-      業種やサービス内容に合わせた<br>
-      オリジナルLPを制作します。
-    </h2>
-
-    <p>
-      整骨院・整体院・スクール・店舗ビジネス向けの<br>
-      LP制作もお気軽にご相談ください。
-    </p>
-
-    <a href="contact.html" class="contact-btn">
-      お問い合わせはこちら
-    </a>
+  <section class="case-contact case-container" aria-labelledby="case-contact-title">
+    <div data-case-reveal>
+<h2 id="case-contact-title">業種やサービス内容に合わせた<br>
+      オリジナルLPを制作します。</h2>
+<p>整骨院・整体院・スクール・店舗ビジネス向けの<br>
+      LP制作もお気軽にご相談ください。</p>
+</div>
+    <a href="contact.html" class="contact-btn">お問い合わせはこちら</a>
   </section>
-
+  <nav class="case-next case-container" aria-label="次の制作実績">
+    <a href="works-siegsports.html">
+<span class="case-label">NEXT PROJECT</span>
+<span class="case-next-title">SIEGSPORTS 公式Webサイト</span>
+<span class="case-next-arrow" aria-hidden="true">→</span>
+</a>
+    <a class="case-all" href="index.html#works">制作実績一覧へ戻る</a>
+  </nav>
 </main>
 
 <footer class="site-footer">
@@ -219,20 +220,52 @@
   
 </footer>
 
-</body>
-
 <script>
-    const menuBtn = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
-  
-  menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-  
-  document.querySelectorAll('.nav a').forEach(link => {
-    link.addEventListener('click', () => {
+  (() => {
+    const button = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    const closeMenu = () => {
       nav.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+    };
+    button.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
     });
-  });
-    </script>
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        closeMenu();
+        button.focus();
+      }
+    });
+    window.matchMedia('(max-width: 768px)').addEventListener('change', closeMenu);
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reduced.matches || !('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove('case-pending');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.04, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('[data-case-reveal]').forEach(element => {
+      element.classList.add('case-pending');
+      observer.observe(element);
+    });
+    document.addEventListener('focusin', event => {
+      const target = event.target.closest('.case-pending');
+      if (target) {
+        target.classList.remove('case-pending');
+        observer.unobserve(target);
+      }
+    });
+    reduced.addEventListener('change', event => {
+      if (!event.matches) return;
+      observer.disconnect();
+      document.querySelectorAll('.case-pending').forEach(element => element.classList.remove('case-pending'));
+    });
+  })();
+</script>
+</body>
 </html>

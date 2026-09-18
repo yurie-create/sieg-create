@@ -19,21 +19,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="sieg-case">
 
 <header class="site-header">
   <a href="index.html" class="logo">
     <span>SIEG CREATE</span>
   </a>
 
-  <nav class="nav">
+  <nav class="nav" id="case-nav" aria-label="メインナビゲーション">
     <a href="/#service">Service</a>
     <a href="/#works">Works</a>
     <a href="/#about">About</a>
     <a href="/#contact">Contact</a>
   </nav>
 
-  <button class="menu-toggle" type="button">
+  <button class="menu-toggle" type="button" aria-label="メニューを開閉" aria-controls="case-nav" aria-expanded="false">
     <span></span>
     <span></span>
   </button>
@@ -41,171 +41,182 @@
   <a href="contact.html" class="header-btn">無料相談</a>
 </header>
 
-<main>
+<main class="case-main" id="case-main">
+  <section class="case-hero case-container" aria-labelledby="project-title">
+    <a class="case-back" href="index.html#works">← 制作実績一覧</a>
+    <div class="case-hero-heading" data-case-reveal>
+      <h1 id="project-title">SIEGSPORTS<span>公式Webサイト</span>
+</h1>
+      <div class="case-hero-meta">
+<p>Web Design</p>
+<p>情報設計・デザイン・実装</p>
+</div>
+    </div>
+    <p class="case-lead" data-case-reveal>社会人陸上チームの活動を伝える<br>
+      オフィシャルWebサイト</p>
 
-  <section class="work-detail-hero">
-    <p class="section-label">WORKS / WEB SITE</p>
-
-    <h1>
-      WEB
-      SITE
-    </h1>
-
-    <p class="work-detail-lead">
-      社会人陸上チームの活動を伝える<br>
-      オフィシャルWebサイト
-    </p>
-    
-    <p class="work-detail-text">
-      大阪府を拠点に活動する社会人陸上チーム「SIEGSPORTS」の公式Webサイトを制作しました。<br>
+  </section>
+  <figure class="case-main-visual case-container" data-case-reveal>
+    <img src="images/work-01.png" width="680" height="380" alt="SIEGSPORTS Webサイト" fetchpriority="high" decoding="async">
+    <figcaption>PC・スマートフォン表示</figcaption>
+  </figure>
+  <section class="case-section case-container" id="overview" aria-labelledby="overview-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">OVERVIEW</p>
+<h2 id="overview-title">プロジェクト概要</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<dl class="case-facts">
+<div>
+<dt>PROJECT</dt>
+<dd>SIEGSPORTS（自社運営）</dd>
+</div>
+<div>
+<dt>CATEGORY</dt>
+<dd>Web Design</dd>
+</div>
+<div>
+<dt>ROLE</dt>
+<dd>情報設計・デザイン・実装</dd>
+</div>
+</dl>
+<div class="case-prose">
+<p>大阪府を拠点に活動する社会人陸上チーム「SIEGSPORTS」の公式Webサイトを制作しました。<br>
       チーム紹介、メンバー紹介、試合結果、ブログ、動画、SNS、問い合わせ導線までをまとめ、
-      チームの魅力と活動内容が伝わるサイトを目指しました。
-    </p>
-    <div class="work-detail-image">
-      <img src="images/work-01.png" alt="SIEGSPORTS Webサイト">
-    </div>
-  </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">PROJECT</p>
-
-    <h2>プロジェクト概要</h2>
-
-    <p class="work-detail-text">
-      SIEGSPORTSは、関西を中心に活動する社会人陸上チームです。<br><br>
+      チームの魅力と活動内容が伝わるサイトを目指しました。</p>
+<p>SIEGSPORTSは、関西を中心に活動する社会人陸上チームです。<br>
+<br>
       トップレベルで競技に取り組む現役アスリートの活動や、
-      チームとしての想いを発信するために公式Webサイトを制作しました。<br><br>
+      チームとしての想いを発信するために公式Webサイトを制作しました。<br>
+<br>
       写真を大きく使ったファーストビューや、メンバー紹介、News、Blog、Movie、SNS導線を設け、
-      チームの活動を多面的に伝えられる構成にしています。
-    </p>
+      チームの活動を多面的に伝えられる構成にしています。</p>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">CHALLENGE</p>
-
-    <h2>課題</h2>
-
-    <div class="problem-grid">
-      <div class="problem-card">チーム活動をまとめて発信できる媒体がない</div>
-      <div class="problem-card">初めてチームを知る人に魅力が伝わりにくい</div>
-      <div class="problem-card">試合結果や活動報告を蓄積できない</div>
-      <div class="problem-card">問い合わせ導線が整っていない</div>
-      <div class="problem-card">SNSと連携した情報発信基盤が必要</div>
-    </div>
+  <section class="case-section case-container" id="challenge" aria-labelledby="challenge-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">CHALLENGE</p>
+<h2 id="challenge-title">課題</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<ul class="case-list">
+<li>チーム活動をまとめて発信できる媒体がない</li>
+<li>初めてチームを知る人に魅力が伝わりにくい</li>
+<li>試合結果や活動報告を蓄積できない</li>
+<li>問い合わせ導線が整っていない</li>
+<li>SNSと連携した情報発信基盤が必要</li>
+</ul>
+</div>
   </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">SOLUTION</p>
-
-    <h2>実装内容</h2>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <span>01</span>
-        <h3>ファーストビュー</h3>
-        <p>競技写真を大きく使い、チームの迫力や世界観が伝わるトップ画面を設計。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>02</span>
-        <h3>チーム紹介</h3>
-        <p>SIEGSPORTSの活動内容やチームの特徴が伝わる紹介セクションを制作。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>03</span>
-        <h3>メンバー紹介</h3>
-        <p>所属選手の魅力や実績を伝えるメンバーカードを実装。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>04</span>
-        <h3>News / Blog</h3>
-        <p>試合結果や活動報告、陸上に関する情報発信ができる仕組みを設計。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>05</span>
-        <h3>Movie / SNS</h3>
-        <p>YouTube動画や各SNSへの導線を設置し、発信力を高める構成に。</p>
-      </div>
-      
-      <div class="feature-card">
-        <span>06</span>
-        <h3>Contact / LINE</h3>
-        <p>問い合わせフォームとLINE導線を設け、練習参加や入部希望につながる流れを整備。</p>
-      </div>
-    </div>
+  <section class="case-section case-container" id="approach" aria-labelledby="approach-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">APPROACH</p>
+<h2 id="approach-title">考え方・制作の背景</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<div class="case-prose">
+<div class="case-prose-part">
+<h3>現場を知っているからこそ<br>
+      作れるWebサイト</h3>
+<p>SIEGSPORTSは私自身が運営しているチームです。<br>
+<br>
+      実際に運営する中で感じた課題や経験を活かし、見た目だけではなく「伝わること」「問い合わせにつながること」を大切にしています。</p>
+</div>
+<div class="case-prose-part">
+<h3>デザインコンセプト</h3>
+<p>「挑戦」「成長」「信頼感」をテーマに設計しました。<br>
+<br>
+      スポーツらしい力強さを持ちながらも、初めて訪れた方でも見やすく、活動内容が伝わりやすいシンプルなデザインを採用しています。</p>
+</div>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">DESIGN</p>
-
-    <h2>デザインコンセプト</h2>
-
-    <p class="work-detail-text">
-      「挑戦」「成長」「信頼感」をテーマに設計しました。<br><br>
-      スポーツらしい力強さを持ちながらも、初めて訪れた方でも見やすく、活動内容が伝わりやすいシンプルなデザインを採用しています。
-    </p>
-  </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">POINT</p>
-
-    <h2>制作ポイント</h2>
-
-    <p class="work-detail-text">
-      スポーツチームのWebサイトとして、写真の迫力と情報の見やすさを両立しました。<br><br>
+  <section class="case-section case-container" id="development" aria-labelledby="development-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">DEVELOPMENT / DESIGN</p>
+<h2 id="development-title">制作内容・設計</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<dl class="case-features">
+<div>
+<dt>ファーストビュー</dt>
+<dd>競技写真を大きく使い、チームの迫力や世界観が伝わるトップ画面を設計。</dd>
+</div>
+<div>
+<dt>チーム紹介</dt>
+<dd>SIEGSPORTSの活動内容やチームの特徴が伝わる紹介セクションを制作。</dd>
+</div>
+<div>
+<dt>メンバー紹介</dt>
+<dd>所属選手の魅力や実績を伝えるメンバーカードを実装。</dd>
+</div>
+<div>
+<dt>News / Blog</dt>
+<dd>試合結果や活動報告、陸上に関する情報発信ができる仕組みを設計。</dd>
+</div>
+<div>
+<dt>Movie / SNS</dt>
+<dd>YouTube動画や各SNSへの導線を設置し、発信力を高める構成に。</dd>
+</div>
+<div>
+<dt>Contact / LINE</dt>
+<dd>問い合わせフォームとLINE導線を設け、練習参加や入部希望につながる流れを整備。</dd>
+</div>
+</dl>
+<div class="case-prose-part">
+<h3>制作ポイント</h3>
+<p>スポーツチームのWebサイトとして、写真の迫力と情報の見やすさを両立しました。<br>
+<br>
       SNSだけでは流れてしまう情報をWebサイトに集約し、
-      チーム紹介、メンバー、試合結果、ブログ、動画、問い合わせまでを一つの導線として設計しています。<br><br>
-      また、スマートフォンからの閲覧を前提に、見やすさと操作しやすさにも配慮しました。
-    </p>
+      チーム紹介、メンバー、試合結果、ブログ、動画、問い合わせまでを一つの導線として設計しています。<br>
+<br>
+      また、スマートフォンからの閲覧を前提に、見やすさと操作しやすさにも配慮しました。</p>
+</div>
+</div>
   </section>
-
-  <section class="work-detail-section mint">
-    <p class="section-label">RESULT</p>
-
-    <h2>得られた効果</h2>
-
-    <div class="problem-grid">
-      <div class="problem-card">チームの活動内容を体系的に発信</div>
-      <div class="problem-card">メンバーやチームの魅力を可視化</div>
-      <div class="problem-card">News・Blogによる継続的な情報発信</div>
-      <div class="problem-card">YouTube・SNSとの連携強化</div>
-      <div class="problem-card">問い合わせ・LINE導線の整備</div>
-    </div>
+  <section class="case-section case-container" id="result" aria-labelledby="result-title">
+    <div class="case-section-heading" data-case-reveal>
+<p class="case-label">RESULT</p>
+<h2 id="result-title">得られた効果</h2>
+</div>
+    <div class="case-section-body" data-case-reveal>
+<ul class="case-list">
+<li>チームの活動内容を体系的に発信</li>
+<li>メンバーやチームの魅力を可視化</li>
+<li>News・Blogによる継続的な情報発信</li>
+<li>YouTube・SNSとの連携強化</li>
+<li>問い合わせ・LINE導線の整備</li>
+</ul>
+</div>
   </section>
-
-  <section class="work-detail-section">
-    <p class="section-label">MESSAGE</p>
-
-    <h2>
-      現場を知っているからこそ<br>
-      作れるWebサイト
-    </h2>
-
-    <p class="work-detail-text">
-      SIEGSPORTSは私自身が運営しているチームです。<br><br>
-      実際に運営する中で感じた課題や経験を活かし、見た目だけではなく「伝わること」「問い合わせにつながること」を大切にしています。
-    </p>
+  <section class="case-related case-container" aria-labelledby="related-title">
+    <div class="case-related-heading" data-case-reveal>
+<p class="case-label">RELATED VISUALS</p>
+<h2 id="related-title">画面で見る制作内容</h2>
+</div>
+    <figure data-case-reveal>
+<img src="images/service-web.jpg" width="680" height="380" alt="SIEGSPORTS公式サイトのPC表示" loading="lazy" decoding="async">
+<figcaption>SIEGSPORTS公式サイトのPC表示</figcaption>
+</figure>
   </section>
-
-  <section class="work-detail-cta">
-    <h2>
-      スポーツチーム運営の経験を活かし、<br>
-      現場目線でWebサイトを制作します。
-    </h2>
-
-    <p>
-      スポーツチーム・クラブ・スクール・教室運営者様向けの<br>
-      Webサイト制作も対応しています。
-    </p>
-
-    <a href="contact.html" class="contact-btn">
-      お問い合わせはこちら
-    </a>
+  <section class="case-contact case-container" aria-labelledby="case-contact-title">
+    <div data-case-reveal>
+<h2 id="case-contact-title">スポーツチーム運営の経験を活かし、<br>
+      現場目線でWebサイトを制作します。</h2>
+<p>スポーツチーム・クラブ・スクール・教室運営者様向けの<br>
+      Webサイト制作も対応しています。</p>
+</div>
+    <a href="contact.html" class="contact-btn">お問い合わせはこちら</a>
   </section>
-
+  <nav class="case-next case-container" aria-label="次の制作実績">
+    <a href="works-school.html">
+<span class="case-label">NEXT PROJECT</span>
+<span class="case-next-title">SIEG SPORTS Sprint School</span>
+<span class="case-next-arrow" aria-hidden="true">→</span>
+</a>
+    <a class="case-all" href="index.html#works">制作実績一覧へ戻る</a>
+  </nav>
 </main>
 
 <footer class="site-footer">
@@ -234,20 +245,52 @@
   
 </footer>
 
-</body>
-
 <script>
-  const menuBtn = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-
-menuBtn.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
-
-document.querySelectorAll('.nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-  });
-});
-  </script>
+  (() => {
+    const button = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    const closeMenu = () => {
+      nav.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+    };
+    button.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        closeMenu();
+        button.focus();
+      }
+    });
+    window.matchMedia('(max-width: 768px)').addEventListener('change', closeMenu);
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reduced.matches || !('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove('case-pending');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.04, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('[data-case-reveal]').forEach(element => {
+      element.classList.add('case-pending');
+      observer.observe(element);
+    });
+    document.addEventListener('focusin', event => {
+      const target = event.target.closest('.case-pending');
+      if (target) {
+        target.classList.remove('case-pending');
+        observer.unobserve(target);
+      }
+    });
+    reduced.addEventListener('change', event => {
+      if (!event.matches) return;
+      observer.disconnect();
+      document.querySelectorAll('.case-pending').forEach(element => element.classList.remove('case-pending'));
+    });
+  })();
+</script>
+</body>
 </html>
